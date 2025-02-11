@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F7EE;
+    font-family: 'Poppins', sans-serif;
+    /* Jemně zelenkavé pozadí */
+}
+
+.main-container {
+    height: 30em;
+    width: 37em;
+    border: 2px solid #6A8CAF; /* Tmavší modrá pro kontrast */
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Jemný stín */
+    overflow: hidden;
+}
+
+.content-container {
+    max-height: 70%;  
+    min-height:70%;
+    overflow-y: auto;   
+    border: 1px solid #ddd; 
+    padding: 10px;  
+}
+
+.title {
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #74A9CF; /* Světlejší modrá */
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.add-container {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #74A9CF;
+    gap:5%;
+}
+
+.add-container button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #5B9279; /* Zelená pro harmonii */
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-container button:hover {
+    background-color: #497A65; /* Tmavší zelená při hoveru */
+}
+
+
+.content {
+    background: lightblue;
+    padding-bottom: 5px;
+    padding-top:5px;
+
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    justify-content:space-around;
+}
+
+.delete ,.ok,.edit {
+    padding: 8px 16px;
+    border: none;
+    background-color: #5B9279; /* Zelená pro harmonii */
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+
+.delete:hover {
+    background-color: #497A65; /* Tmavší zelená při hoveru */
+}
