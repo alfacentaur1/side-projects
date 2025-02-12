@@ -1,0 +1,23 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    color:white;
+}
+ 
+body {
+    background: #222;
+
+}
+
+
+.clicked {
+    transform: scale(1.01);
+}
+
+.unclicked {
+    transform:scale(0.98);
+}
+
