@@ -28,12 +28,21 @@ async function fetchWeather(city) {
             image.src = "images/cloudy.png";
         } else if (weather === "Rain") {
             image.src = "images/rain.png";
-        } else if (weather === "Clear") {
+        }
+        else if (weather === "Sun") {
+            image.src = "images/sun.png";
+        }
+         else if (weather === "Clear") {
             image.src = "images/sun.png";
         } else if (weather === "Snow") {
             image.src = "images/snow.png";
-        } else {
-            image.src = "images/default.png"; // Add a default image
+        }
+        else if (weather === "Mist") {
+            image.src = "images/mist.png";
+        
+        }
+         else {
+            image.src = "images/sun.png";
         }
     } catch (error) {
         alert("Failed to fetch weather. Please check your connection.");
