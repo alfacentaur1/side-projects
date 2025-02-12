@@ -11,17 +11,17 @@ body {
     justify-content: center;
     background-color: #F0F7EE;
     font-family: 'Poppins', sans-serif;
-    /* Jemně zelenkavé pozadí */
+
 }
 
 .main-container {
     height: 30em;
     width: 37em;
-    border: 2px solid #6A8CAF; /* Tmavší modrá pro kontrast */
+    border: 2px solid #6A8CAF; 
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Jemný stín */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
 }
 
@@ -30,7 +30,7 @@ body {
     min-height:70%;
     overflow-y: auto;   
     border: 1px solid #ddd; 
-    padding: 10px;  
+    padding: 10px; 
 }
 
 .title {
@@ -38,7 +38,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #74A9CF; /* Světlejší modrá */
+    background-color: #74A9CF; 
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
@@ -56,7 +56,7 @@ body {
 .add-container button {
     padding: 8px 16px;
     border: none;
-    background-color: #5B9279; /* Zelená pro harmonii */
+    background-color: #5B9279; 
     color: white;
     font-weight: bold;
     border-radius: 6px;
@@ -65,7 +65,7 @@ body {
 }
 
 .add-container button:hover {
-    background-color: #497A65; /* Tmavší zelená při hoveru */
+    background-color: #497A65; 
 }
 
 
@@ -73,17 +73,17 @@ body {
     background: lightblue;
     padding-bottom: 5px;
     padding-top:5px;
-
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     display:flex;
     justify-content:space-around;
+    margin-bottom: 10px;
 }
 
 .delete ,.ok,.edit {
     padding: 8px 16px;
     border: none;
-    background-color: #5B9279; /* Zelená pro harmonii */
+    background-color: #5B9279; 
     color: white;
     font-weight: bold;
     border-radius: 6px;
@@ -93,5 +93,5 @@ body {
 
 
 .delete:hover {
-    background-color: #497A65; /* Tmavší zelená při hoveru */
+    background-color: #497A65; 
 }
