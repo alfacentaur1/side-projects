@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body {
+    background: #222;
+    height: 99vh;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    height: 350px;
+    width: 800px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    overflow: hidden; /* Prevents overflow when numbers change */
+}
+
+.mins, .secs, .centisecs {
+    height: 100%;
+    width: 100px; /* Fixed width for each section */
+    text-align: center;
+    font-family: "Courier New", monospace; /* Monospaced font for consistent width */
+}
+
+.type {
+    text-align: left;
+    font-size: 15px;
+    margin-top: -20px;
+    margin-left: 30px;
+}
+
+.time_real {
+    margin-top: 70px;
+    font-size: 130px;
+    display: block;
+    width: 100%;  /* Ensures consistent size */
+    white-space: nowrap;  /* Prevents text from wrapping */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 10%;
+    width: 40%;
+}
+
+.buttons button {
+    border: solid 2px white;
+    border-radius: 20px;
+    height: 70px;
+    background-color: transparent;
+    width: 100px;
+    transform:scale(0.9);
+    transition: transform 0.5s ease-out, background-color 1s ease-out, color 1s ease-out, border 1s ease-out;  
+}
+
+.buttons button:hover {
+    transform: scale(1.1);  
+    background-color: white;
+    color: #222;
+    border: solid 2px #222;
+    transition: transform 0.2s ease-out, background-color 1s ease-out, color 1s ease-out, border 1s ease-out;  
+}
