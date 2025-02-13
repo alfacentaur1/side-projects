@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Password generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex justify-center items-center min-h-[350px] max-h-[99vh]">
+    <div class="main-container h-[75%] w-[50%] flex items-center justify-center flex-col gap-8 mt-10">
+        <h1 class="mt-8">password generator</h1>
+        <div class="display"><span id="display"></span></div>
+        <div class="slidecontainer">
+            <div class="flex justify-center items-center">length <span class="value ml-2" id="range_display">1</span></div>
+            <input type="range" min="1" max="30" value="0" class="slider_range" id="myRange">
+        </div>
+
+        <!-- Standardní checkboxy -->
+        <div class="settings flex flex-col gap-7">
+            <div class="setting">
+                <p>uppercase</p>
+               <label class="checkbox" for="uppercase">
+                   <input type="checkbox" id="uppercase">
+                   <div class="slider">
+                       <span class="ml-1">Off</span>
+                       <div class="knob"></div>
+                       <span class="on mr-1">On</span>
+                   </div>
+               </label>
+           </div>
+
+            <!-- Přepínač pro lowercase -->
+             <div class="setting">
+             <p>lowercase</p>
+            <label class="checkbox" for="lowercase">
+                <input type="checkbox" id="lowercase">
+                <div class="slider">
+                    <span class="ml-1">Off</span>
+                    <div class="knob"></div>
+                    <span class="on mr-1">On</span>
+                </div>
+            </label>
+        </div>
+
+        <div class="setting">
+            <p>include numbers</p>
+           <label class="checkbox" for="include">
+               <input type="checkbox" id="include">
+               <div class="slider">
+                   <span class="ml-1">Off</span>
+                   <div class="knob"></div>
+                   <span class="on mr-1">On</span>
+               </div>
+           </label>
+       </div>
+
+       <div class="setting">
+        <p>include symbols</p>
+       <label class="checkbox" for="includes">
+           <input type="checkbox" id="includes">
+           <div class="slider">
+               <span class="ml-1">Off</span>
+               <div class="knob"></div>
+               <span class="on mr-1">On</span>
+           </div>
+       </label>
+   </div>
+        </div>
+
+        <div class="generate-password">
+            <button class="generate" id="generate">generate password</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
