@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hwb(240 24% 68%);
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.female-button, .male-button {
+    background: #19192b;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background 0.2s ease-in;
+}
+
+.female-button:hover, .male-button:hover {
+    background: rgb(30, 30, 54);
+    transition: background 0.2s ease-out;
+}
+
+.male-button input:checked + label,
+.female-button input:checked + label {
+    background: rgb(30, 30, 54);
+}
+
+.active {
+    background: rgb(30, 30, 54);
+}
+
+.slider_range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 75%;
+    height: 3px; 
+    border-radius: 20px;
+    background: #4e5b88;
+    outline: none;
+    opacity: 0.7;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+    position: relative;
+}
+
+.slider_range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    border-radius: 20px;  
+    width: 16px;
+    height: 16px;
+    background-color: #3b398d;
+    cursor: pointer;
+    top: -6px; 
+    box-sizing: border-box;
+}
+
+.slider_range::-webkit-slider-runnable-track {
+    height: 3px; 
+    background: linear-gradient(to right, red 0%, red var(--slider-value), transparent var(--slider-value), transparent 100%);
+}
+
+.height-slider {
+    background:#19192b ;
+    padding:20px;
+    padding-bottom: 40px;
+    width:65%;
+    border-radius: 15px;
+}
+
+.height, .weight {
+    background: #19192b;
+    padding:30px;
+    border-radius: 15px;
+}
+
+
+
+.main-container {
+    background: #1e1e2f;
+    border-radius: 15px;
+}
+
+.title {
+    width:100%;
+    background: red;
+    height:30%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex justify-center items-center flex-row">
+
+    <div class="main-container mt-10 w-[35%] min-h-20 flex justify-center items-center flex-col" >
+        <div class="title flex justify-center items-center flex-col">
+            <h1>BMI Calculator</h1>
+        </div>
+        <div class="images flex justify-center items-center mt-5 gap-10">
+            <!-- Male Checkbox -->
+            <div class="male-button flex justify-center items-center flex-col gap-2">
+                <input type="checkbox" id="male" class="hidden" />
+                <label for="male" class="flex items-center justify-center cursor-pointer">
+                    <img src="gender.png" alt="male icon" class="w-20 h-20">
+                </label>
+                <p>Male</p>
+            </div>
+
+            <!-- Female Checkbox -->
+            <div class="female-button flex justify-center items-center flex-col gap-2">
+                <input type="checkbox" id="female" class="hidden" />
+                <label for="female" class="flex items-center justify-center cursor-pointer">
+                    <img src="female.png" alt="female icon" class="w-20 h-20">
+                </label>
+                <p>Female</p>
+            </div>
+        </div>
+
+        <div class="height-slider mt-6 flex justify-center items-center flex-col ">
+            <div class="flex justify-center items-center">Height </div>
+            <span class="value " id="range_display mb-10">1</span>
+            <input type="range" min="1" max="250" value="0" class="slider_range" id="myRange">
+        </div>
+        <div class="measures mt-6 flex justify-between items-center flex-row gap-10 w-[65%]">
+            <div class="weight flex justify-center items-center flex-col">
+                <p>Weight</p>
+                <span id="weight">0</span>
+                <div class="buttons-w">
+                    <button id="weight-p"></button>
+                    <button id="weight-m"></button>
+                </div>
+            </div>
+            <div class="height flex justify-center items-center flex-col">
+                <p>Height</p>
+                <span id="height">0</span>
+                <div class="buttons-h">
+                    <button id="weight-p"></button>
+                    <button id="weight-m"></button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="calculate">Calculate</button>
+        </div>
+    </div>
+    
+    <div class="result w-[35%] border"></div>
+
+    <script>
+    const slider = document.getElementById("myRange");
+
+    slider.oninput = function() {
+    let sliderValue = this.value / this.max;
+    this.style.setProperty('--slider-value', sliderValue * 100 + '%');
+}
+
+    </script>
+</body>
+</html>
